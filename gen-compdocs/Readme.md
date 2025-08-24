@@ -44,7 +44,6 @@ GO111MODULE=on go run main.go --component kubelet
 
 * See `gen-apidocs` for API reference generation workflows.
 * Review `content/en/docs/Reference/` for integration and publishing guidelines.
-* Consult the [Kubernetes SIG Docs contribution guide](https://github.com/kubernetes/community/tree/master/sig-docs) for best practices.
 * Explore `genref/` for additional multi-format reference tooling.
 
 
