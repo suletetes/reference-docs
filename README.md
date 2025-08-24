@@ -50,5 +50,4 @@ Before using any tools in this repository, ensure you have:
   - [gen-kubectldocs](./gen-kubectldocs/README.md)
   - [gen-resourcesdocs](./gen-resourcesdocs/README.md)
   - [genref](./genref/README.md)
-- Consult the SIG Docs contribution guide for best practices and publishing workflows.
 - Explore integration points under `content/en/docs/Reference/` for publishing generated docs.
