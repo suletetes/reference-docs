@@ -1,8 +1,8 @@
-# {{% heading "overview" %}}
+# Overview
 
 The `reference-docs` repository provides automated tools and workflows for generating Kubernetes API, CRD, component, and command reference documentation. Its purpose is to ensure that reference documentation remains accurate, consistent, and up to date across Kubernetes releases. Contributors use this repo to build, update, and publish docs for core APIs, controllers, CLI tools, and custom resources.
 
-# {{% heading "prerequisites" %}}
+# Prerequisites
 
 Before using any tools in this repository, ensure you have:
 
@@ -18,7 +18,7 @@ Before using any tools in this repository, ensure you have:
   - `K8S_RELEASE`
   - `GO111MODULE=on` (if applicable)
 
-# {{% heading "documentation generation workflow" %}}
+# Documentation generation workflow
 
 1. **Configure source files:** Place OpenAPI specs, CRD definitions, or config files in the appropriate versioned subfolders.
 2. **Set environment variables:** Export the environment variables required by the tooling (for example `K8S_ROOT`, `K8S_WEBROOT`, `K8S_RELEASE`).
@@ -26,7 +26,7 @@ Before using any tools in this repository, ensure you have:
 4. **Review and integrate output:** Inspect generated Markdown/Hugo files for completeness and formatting, then copy or commit them into the website content directory (for example `content/en/docs/Reference/`).
 5. **Customize templates (optional):** Edit templates in each tool's folder to adjust formatting or front matter as needed.
 
-# {{% heading "folder breakdown" %}}
+# Folder breakdown
 
 - [`gen-apidocs/`](./gen-apidocs/README.md): Generates API reference documentation from OpenAPI specs.
 - [`gen-compdocs/`](./gen-compdocs/README.md): Produces component-level documentation for Kubernetes controllers and services.
@@ -35,14 +35,14 @@ Before using any tools in this repository, ensure you have:
 - [`genref/`](./genref/README.md): Generates reference docs for APIs and components in multiple formats.
 - [`cmd/` and `scripts/`]: CLI entrypoints and helper scripts used across generators (see each README for details).
 
-# {{% heading "benefits" %}}
+# Benefits
 
 - Ensures consistent, high-quality reference docs for Kubernetes.
 - Reduces manual effort for maintainers and contributors.
 - Supports multiple versions and output formats.
 - Facilitates onboarding and review for new contributors.
 
-# {{% heading "whatsnext" %}}
+# Whatsnext
 
 - Review the documentation pages for each major folder:
   - [gen-apidocs](./gen-apidocs/README.md)
